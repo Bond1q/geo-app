@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import Countries from './Components/Countries/Countries';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [count, setCount] = useState(0)
+	useEffect(() => {
+		window.test = () => setCount(prev => prev + 1)
+	}, [])
+	return (
+		<div className="App">
+			<Navbar />
+			<Switch>
+				<Route path='/countries' render={Countries} />
+				<Route path='/game' render={Countries} />
+				<Route path='/' render={Home} />
+			</Switch>
+
+		</div>
+	);
 }
 
 export default App;
