@@ -1,9 +1,10 @@
 import React from 'react'
-
+import map from '../img/map.jpg'
+import s from '../styles/home.module.scss'
 function Home() {
 	return (
-		<div>
-			HOME
+		<div className={s.home}>
+			<img src={map} alt="big map" />
 		</div>
 	)
 }

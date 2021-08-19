@@ -1,0 +1,43 @@
+.navbar {
+
+	border: 0.5px solid #444D56;
+	font-weight: 400;
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		width: 600px;
+		margin: 0 auto;
+		align-items: center;
+
+		a {
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			height: 55px;
+		}
+
+		input {
+			transition: 0.2s;
+			text-decoration: none;
+			background: none;
+			border: 1px solid #444D56;
+			border-radius: 5px;
+			font-size: 16px;
+			color: white;
+			padding: 6px 11px;
+			width: 200px;
+
+			&:focus {
+				border: 0.5px solid white;
+
+			}
+		}
+
+		.active {
+		
+				font-weight: 500;
+			
+		}
+	}
+}

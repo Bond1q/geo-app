@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Countries from './Components/Countries/Countries';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
