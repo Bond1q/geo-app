@@ -24,7 +24,7 @@ const Countries = React.memo(() => {
 
 			{activeFilter === 'alphabet' && <div className={s.countries}>
 				{countriesInformation.length > 0 && countriesInformation.map((country, index) => {
-					return <ShortInfo key={index} flag={country.flag} name={country.name} />
+					return <ShortInfo id={country.alpha2Code} key={index} flag={country.flag} name={country.name} />
 				})}
 			</div>}
 			{activeFilter === 'continent' &&

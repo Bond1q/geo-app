@@ -7,7 +7,7 @@ const ValidContinent = ({ continent, countries }) => {
 		<div className={s.validContinent}>
 			<div className={s.nameContinent}>{continent[0]}</div>
 			<div className={s.countries}>			{countries[0].map((country, index) => {
-				return <ShortInfo key={index} flag={country.flag} name={country.name} />
+				return <ShortInfo id={country.alpha2Code} key={index} flag={country.flag} name={country.name} />
 			})}</div>
 		</div>
 	)
