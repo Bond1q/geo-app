@@ -18,7 +18,6 @@ export const requestAllRegions = async () => {
 	try {
 		const response = await axios.all(continents.map(c => makeRequest(c)))
 		// return response
-		console.log(continents.map((c, i) => validResponse(c, response[i].data)));
 		return continents.map((c, i) => validResponse(c, response[i].data));
 	} catch (error) {
 		console.log('problem');

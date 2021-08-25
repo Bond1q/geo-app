@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 import { getAllCountries } from './redux/countries-reducer';
 import { getAllRegions } from './redux/regions-reducer';
 import Country from './Components/Country/Country';
+import { ArrowToTop } from './Components/ArrowToTop';
 function App() {
 	const dispatch = useDispatch()
 
@@ -26,7 +27,7 @@ function App() {
 				<Route path='/game' ><Countries /></Route>
 				<Route path='/' ><Home /></Route>
 			</Switch>
-
+			<ArrowToTop />
 		</div>
 
 	);
