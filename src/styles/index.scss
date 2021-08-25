@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 }
 
+
 *{
 	box-sizing: border-box;
 }
@@ -17,6 +18,21 @@ body {
 a{
 	text-decoration: none;
 	color: white;
+}
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 5%;
+	cursor: pointer;
+
+	svg {
+		width: 40px;
+			fill: #ffff;
+
+		&:hover {
+			fill: #adadad;;
+		}
+	}
 }
 
 
